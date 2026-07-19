@@ -8,7 +8,7 @@ A technical podcast where field deployment engineer Alexa Griffith interviews bu
 
 ## 🌐 Links
 
-- **YouTube:** https://youtube.com/@alexa_griffith
+- **YouTube:** https://youtube.com/@alexasinput
 - **Spotify:** https://open.spotify.com/show/7uBXZa8rP4ZDPXN3eKQw3K
 - **Substack:** https://alexasinput.substack.com
 - **Website:** alexasinput.ai
