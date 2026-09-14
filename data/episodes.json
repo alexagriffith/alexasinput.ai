@@ -1,0 +1,76 @@
+[
+  {
+    "id": "IT41K43aqTk",
+    "title": "Building the Network for AI Agents — Yan Avlasov, Google",
+    "duration": "54:26",
+    "url": "https://www.youtube.com/watch?v=IT41K43aqTk",
+    "description": "Yan Avlasov of Google discusses per-agent permissions, dynamic policy loading, model routing, and fixing security vulnerabilities.",
+    "notes": "https://alexasinput.substack.com/p/building-the-network-for-ai-agents"
+  },
+  {
+    "id": "6kGM8jl-ekQ",
+    "title": "Personal Security with Alex Zenla, Founder and CTO of Edera",
+    "duration": "50:56",
+    "url": "https://www.youtube.com/watch?v=6kGM8jl-ekQ"
+  },
+  {
+    "id": "HIGZb7KWMFM",
+    "title": "Paying Attention in the Age of Agents",
+    "duration": "1:04:19",
+    "url": "https://www.youtube.com/watch?v=HIGZb7KWMFM"
+  },
+  {
+    "id": "xxpsPIuwkjM",
+    "title": "Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal",
+    "duration": "44:07",
+    "url": "https://www.youtube.com/watch?v=xxpsPIuwkjM"
+  },
+  {
+    "id": "vTBjUEWQ4BM",
+    "title": "Systems, Scale, and SRE with Vlad Leyberov",
+    "duration": "57:41",
+    "url": "https://www.youtube.com/watch?v=vTBjUEWQ4BM"
+  },
+  {
+    "id": "eI_kSVFU8Z0",
+    "title": "David Aronchick on Distributed Data Orchestration with Expanso",
+    "duration": "1:17:33",
+    "url": "https://www.youtube.com/watch?v=eI_kSVFU8Z0"
+  },
+  {
+    "id": "p6R_EeLheA4",
+    "title": "How vLLM and llm-d Changed AI Inference with Rob Shaw",
+    "duration": "1:41:55",
+    "url": "https://www.youtube.com/watch?v=p6R_EeLheA4"
+  },
+  {
+    "id": "u5EmH2Cy40k",
+    "title": "Intelligence Per Watt with Emilio Andere",
+    "duration": "1:13:31",
+    "url": "https://www.youtube.com/watch?v=u5EmH2Cy40k"
+  },
+  {
+    "id": "KPz72eeAqqA",
+    "title": "Building Reliable Systems at Bloomberg with Sal Furino",
+    "duration": "54:04",
+    "url": "https://www.youtube.com/watch?v=KPz72eeAqqA"
+  },
+  {
+    "id": "SdB7wU9N5c8",
+    "title": "Laila: Reinventing Dating as a Social Marketplace with Kaan Divitoğlu",
+    "duration": "54:29",
+    "url": "https://www.youtube.com/watch?v=SdB7wU9N5c8"
+  },
+  {
+    "id": "xWrp3HNNvdY",
+    "title": "Architecting Agentic AI with Swagat Kulkarni",
+    "duration": "57:23",
+    "url": "https://www.youtube.com/watch?v=xWrp3HNNvdY"
+  },
+  {
+    "id": "wrvbSLMYUBc",
+    "title": "Beyond the Clouds with Kelsey Hightower",
+    "duration": "1:06:17",
+    "url": "https://www.youtube.com/watch?v=wrvbSLMYUBc"
+  }
+]

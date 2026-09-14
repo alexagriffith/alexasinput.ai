@@ -2,359 +2,481 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Meta Tags -->
-  <title>Alexa's Input (AI) — Technical Podcast on Systems & Infrastructure</title>
-  <meta name="title" content="Alexa's Input (AI) — Technical Podcast on Systems & Infrastructure">
-  <meta name="description" content="Alexa Griffith interviews engineers building AI infrastructure, distributed systems, and production software. Watch episodes, listen, and read the show notes.">
-  <meta name="keywords" content="systems podcast, infrastructure podcast, AI podcast, distributed systems, Kubernetes, SRE, technical podcast, production engineering, Alexa Griffith">
-  <meta name="author" content="Alexa Griffith">
-
-  <!-- Open Graph / Facebook -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <title>Alexa’s Input (AI) — Podcast with Alexa Griffith</title>
+  <meta name="description" content="Alexa’s Input is a podcast about how technology actually moves forward.">
+  <link rel="canonical" href="https://alexasinputai.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alexasinputai.com/">
-  <meta property="og:title" content="Alexa's Input (AI) — Technical Podcast on Systems & Infrastructure">
-  <meta property="og:description" content="Alexa Griffith interviews engineers building AI infrastructure, distributed systems, and production software. Watch episodes, listen, and read the show notes.">
-  <meta property="og:image" content="https://alexasinputai.com/og-image.png">
-
-  <meta property="og:site_name" content="Alexa's Input (AI)">
-  <meta property="og:image:alt" content="Alexa's Input (AI), hosted by Alexa Griffith">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://alexasinputai.com/">
-  <meta property="twitter:title" content="Alexa's Input (AI) — Technical Podcast on Systems & Infrastructure">
-  <meta property="twitter:description" content="Alexa Griffith interviews engineers building AI infrastructure, distributed systems, and production software. Watch episodes, listen, and read the show notes.">
-  <meta property="twitter:image" content="https://alexasinputai.com/og-image.png">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://alexasinputai.com/">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
-
-  <!-- Structured Data / JSON-LD for Podcast -->
+  <meta property="og:title" content="Alexa’s Input (AI) — Podcast with Alexa Griffith">
+  <meta property="og:description" content="Alexa’s Input is a podcast about how technology actually moves forward.">
+  <meta property="og:site_name" content="Alexa’s Input (AI)">
+  <meta property="og:image" content="https://alexasinputai.com/assets/alexas-input-logo.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Alexa’s Input podcast artwork">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alexa’s Input (AI) — Podcast with Alexa Griffith">
+  <meta name="twitter:description" content="Alexa’s Input is a podcast about how technology actually moves forward.">
+  <meta name="twitter:image" content="https://alexasinputai.com/assets/alexas-input-logo.png">
+  <meta name="twitter:image:alt" content="Alexa’s Input podcast artwork">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "PodcastSeries",
-  "name": "Alexa's Input (AI)",
-  "description": "Alexa Griffith interviews engineers building AI infrastructure, distributed systems, and production software. Watch episodes, listen, and read the show notes.",
-  "url": "https://alexasinputai.com/",
-  "author": {
-    "@type": "Person",
-    "name": "Alexa Griffith",
-    "url": "https://alexagriffith.com/"
-  },
-  "genre": [
-    "Technology",
-    "Infrastructure",
-    "Systems",
-    "AI",
-    "SRE"
-  ],
-  "keywords": "distributed systems, infrastructure, AI, SRE, Kubernetes, production engineering, technical podcast",
-  "inLanguage": "en-US",
-  "@id": "https://alexasinputai.com/#podcast",
-  "sameAs": [
-    "https://www.youtube.com/@alexasinput",
-    "https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H",
-    "https://alexasinput.substack.com/",
-    "https://www.instagram.com/alexasinput/",
-    "https://www.tiktok.com/@alexasinput"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://alexasinputai.com/#website",
+      "url": "https://alexasinputai.com/",
+      "name": "Alexa’s Input (AI)",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alexagriffith.com/#person",
+      "name": "Alexa Griffith",
+      "url": "https://alexagriffith.com/"
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://alexasinputai.com/#podcast",
+      "url": "https://alexasinputai.com/",
+      "name": "Alexa’s Input (AI)",
+      "description": "Alexa’s Input is a podcast about how technology actually moves forward. Hosted by Alexa Griffith, it features conversations with engineers, founders, CEOs, and leaders shaping today’s tech landscape. Each episode digs into the decisions behind the systems — what’s being built, what’s being questioned, and why it matters now.",
+      "author": {
+        "@id": "https://alexagriffith.com/#person"
+      },
+      "inLanguage": "en",
+      "image": "https://alexasinputai.com/assets/alexas-input-logo.png",
+      "sameAs": [
+        "https://www.youtube.com/@alexasinput",
+        "https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H",
+        "https://alexasinput.substack.com/",
+        "https://www.instagram.com/alexasinput/",
+        "https://www.tiktok.com/@alexasinput"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://alexasinputai.com/#webpage",
+      "url": "https://alexasinputai.com/",
+      "name": "Alexa’s Input (AI)",
+      "isPartOf": {
+        "@id": "https://alexasinputai.com/#website"
+      },
+      "about": {
+        "@id": "https://alexasinputai.com/#podcast"
+      },
+      "mainEntity": {
+        "@id": "https://alexasinputai.com/#episode-list"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://alexasinputai.com/#episode-list",
+      "name": "Recent podcast episodes",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-IT41K43aqTk",
+            "url": "https://www.youtube.com/watch?v=IT41K43aqTk",
+            "name": "Building the Network for AI Agents — Yan Avlasov, Google",
+            "image": "https://i.ytimg.com/vi/IT41K43aqTk/hqdefault.jpg",
+            "timeRequired": "PT3266S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            },
+            "description": "Yan Avlasov of Google discusses per-agent permissions, dynamic policy loading, model routing, and fixing security vulnerabilities."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-6kGM8jl-ekQ",
+            "url": "https://www.youtube.com/watch?v=6kGM8jl-ekQ",
+            "name": "Personal Security with Alex Zenla, Founder and CTO of Edera",
+            "image": "https://i.ytimg.com/vi/6kGM8jl-ekQ/hqdefault.jpg",
+            "timeRequired": "PT3056S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-HIGZb7KWMFM",
+            "url": "https://www.youtube.com/watch?v=HIGZb7KWMFM",
+            "name": "Paying Attention in the Age of Agents",
+            "image": "https://i.ytimg.com/vi/HIGZb7KWMFM/hqdefault.jpg",
+            "timeRequired": "PT3859S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-xxpsPIuwkjM",
+            "url": "https://www.youtube.com/watch?v=xxpsPIuwkjM",
+            "name": "Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal",
+            "image": "https://i.ytimg.com/vi/xxpsPIuwkjM/hqdefault.jpg",
+            "timeRequired": "PT2647S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-vTBjUEWQ4BM",
+            "url": "https://www.youtube.com/watch?v=vTBjUEWQ4BM",
+            "name": "Systems, Scale, and SRE with Vlad Leyberov",
+            "image": "https://i.ytimg.com/vi/vTBjUEWQ4BM/hqdefault.jpg",
+            "timeRequired": "PT3461S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-eI_kSVFU8Z0",
+            "url": "https://www.youtube.com/watch?v=eI_kSVFU8Z0",
+            "name": "David Aronchick on Distributed Data Orchestration with Expanso",
+            "image": "https://i.ytimg.com/vi/eI_kSVFU8Z0/hqdefault.jpg",
+            "timeRequired": "PT4653S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-p6R_EeLheA4",
+            "url": "https://www.youtube.com/watch?v=p6R_EeLheA4",
+            "name": "How vLLM and llm-d Changed AI Inference with Rob Shaw",
+            "image": "https://i.ytimg.com/vi/p6R_EeLheA4/hqdefault.jpg",
+            "timeRequired": "PT6115S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-u5EmH2Cy40k",
+            "url": "https://www.youtube.com/watch?v=u5EmH2Cy40k",
+            "name": "Intelligence Per Watt with Emilio Andere",
+            "image": "https://i.ytimg.com/vi/u5EmH2Cy40k/hqdefault.jpg",
+            "timeRequired": "PT4411S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-KPz72eeAqqA",
+            "url": "https://www.youtube.com/watch?v=KPz72eeAqqA",
+            "name": "Building Reliable Systems at Bloomberg with Sal Furino",
+            "image": "https://i.ytimg.com/vi/KPz72eeAqqA/hqdefault.jpg",
+            "timeRequired": "PT3244S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-SdB7wU9N5c8",
+            "url": "https://www.youtube.com/watch?v=SdB7wU9N5c8",
+            "name": "Laila: Reinventing Dating as a Social Marketplace with Kaan Divitoğlu",
+            "image": "https://i.ytimg.com/vi/SdB7wU9N5c8/hqdefault.jpg",
+            "timeRequired": "PT3269S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-xWrp3HNNvdY",
+            "url": "https://www.youtube.com/watch?v=xWrp3HNNvdY",
+            "name": "Architecting Agentic AI with Swagat Kulkarni",
+            "image": "https://i.ytimg.com/vi/xWrp3HNNvdY/hqdefault.jpg",
+            "timeRequired": "PT3443S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "PodcastEpisode",
+            "@id": "https://alexasinputai.com/#episode-wrvbSLMYUBc",
+            "url": "https://www.youtube.com/watch?v=wrvbSLMYUBc",
+            "name": "Beyond the Clouds with Kelsey Hightower",
+            "image": "https://i.ytimg.com/vi/wrvbSLMYUBc/hqdefault.jpg",
+            "timeRequired": "PT3977S",
+            "partOfSeries": {
+              "@id": "https://alexasinputai.com/#podcast"
+            }
+          }
+        }
+      ]
+    }
   ]
 }
   </script>
-
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="container">
-    <!-- Header -->
     <header class="header">
-      <div class="logo">
-        <h1 class="logo-text">Alexa's Input (AI)</h1>
-        <p class="tagline">Technical conversations on systems, infrastructure & engineering</p>
-      </div>
+      <a class="wordmark" href="/" aria-label="Alexa’s Input home">AI<span aria-hidden="true"> / </span></a>
+      <nav aria-label="Main navigation">
+        <a href="#episodes">Episodes</a>
+        <a href="#attention-deficit">Attention Deficit</a>
+        <a href="#writing">Writing</a>
+        <a href="#follow">Listen &amp; follow</a>
+      </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h2 class="hero-title">Systems, Infrastructure & Engineering</h2>
-        <p class="hero-description">
-          Technical conversations with builders and thought leaders exploring distributed systems,
-          infrastructure, AI, SRE, and production engineering. Going beneath the surface to understand the mechanisms.
-        </p>
-        <div class="cta-group">
-          <a href="https://youtube.com/@alexasinput" class="btn btn-primary" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            Watch on YouTube
-          </a>
-          <a href="https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H" class="btn btn-secondary" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-            Listen on Spotify
-          </a>
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-labelledby="podcast-title">
+        <h1 id="podcast-title">Alexa’s Input (AI)</h1>
+        <p class="podcast-bio">Alexa’s Input is a podcast about how technology actually moves forward. Hosted by Alexa Griffith, it features conversations with engineers, founders, CEOs, and leaders shaping today’s tech landscape. Each episode digs into the decisions behind the systems — what’s being built, what’s being questioned, and why it matters now.</p>
+      </section>
+      <section class="section" id="episodes" aria-labelledby="episodes-title">
+        <div class="section-header">
+          <h2 id="episodes-title">Latest episode</h2>
+          <a class="section-link" href="https://www.youtube.com/@alexasinput/videos">All episodes on YouTube <span aria-hidden="true">↗</span></a>
         </div>
-      </div>
-    </section>
-
-    <!-- Recent Episodes -->
-    <section class="episodes">
-      <div class="section-header">
-        <h2 class="section-title">Recent Episodes</h2>
-      </div>
-
-      <div class="episode-grid">
-        <!-- Latest Episodes with YouTube Embeds -->
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/IT41K43aqTk?rel=0" title="Building the Network for AI Agents — Yan Avlasov, Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+        <article class="episode-card featured" id="episode-IT41K43aqTk">
+          <div class="video-shell" data-video-id="IT41K43aqTk">
+            <img src="https://i.ytimg.com/vi/IT41K43aqTk/hqdefault.jpg" alt="" width="480" height="360" loading="eager" fetchpriority="high">
+            <button class="video-play" type="button" aria-label="Play Building the Network for AI Agents — Yan Avlasov, Google" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 54:26">54:26</span>
           </div>
           <div class="episode-content">
-            <h3 class="episode-title">Building the Network for AI Agents — Yan Avlasov, Google</h3>
-            <p>Yan Avlasov of Google discusses per-agent permissions, dynamic policy loading, model routing, and fixing security vulnerabilities.</p>
-            <div class="episode-tags"><span class="tag">AI Agents</span><span class="tag">Envoy</span><span class="tag">Security</span></div>
-            <p><a href="https://youtu.be/IT41K43aqTk">Watch on YouTube</a> · <a href="https://open.spotify.com/episode/7xHKAMD94c0uIFErPzpAWw">Listen on Spotify</a> · <a href="https://alexasinput.substack.com/p/building-the-network-for-ai-agents">Read the episode takeaways</a></p>
+            <h3>Building the Network for AI Agents — Yan Avlasov, Google</h3>
+            <p class="episode-description">Yan Avlasov of Google discusses per-agent permissions, dynamic policy loading, model routing, and fixing security vulnerabilities.</p>
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=IT41K43aqTk">Watch on YouTube</a><a href="https://alexasinput.substack.com/p/building-the-network-for-ai-agents">Read the takeaways</a></div>
           </div>
         </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/6kGM8jl-ekQ?rel=0&modestbranding=1" title="Personal Security with Alex Zenla, Founder and CTO of Edera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">Personal Security with Alex Zenla, Founder and CTO of Edera</h3>
-            <div class="episode-tags">
-              <span class="tag">Security</span>
-              <span class="tag">Open Source</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/HIGZb7KWMFM?rel=0&modestbranding=1" title="Paying Attention in the Age of Agents" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">Paying Attention in the Age of Agents</h3>
-            <div class="episode-tags">
-              <span class="tag">AI Agents</span>
-              <span class="tag">Developer Tools</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/xxpsPIuwkjM?rel=0&modestbranding=1" title="Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal</h3>
-            <div class="episode-tags">
-              <span class="tag">AI Agents</span>
-              <span class="tag">Productivity</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/vTBjUEWQ4BM?rel=0&modestbranding=1" title="Systems, Scale, and SRE with Vlad Leyberov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">Systems, Scale, and SRE with Vlad Leyberov</h3>
-            <div class="episode-tags">
-              <span class="tag">SRE</span>
-              <span class="tag">Systems</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/eI_kSVFU8Z0?rel=0&modestbranding=1" title="David Aronchick on Distributed Data Orchestration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">David Aronchick on Distributed Data Orchestration</h3>
-            <div class="episode-tags">
-              <span class="tag">Distributed Systems</span>
-              <span class="tag">Edge Computing</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="episode-card">
-          <div class="video-embed">
-            <iframe src="https://www.youtube-nocookie.com/embed/p6R_EeLheA4?rel=0&modestbranding=1" title="How vLLM and llm-d Changed AI Inference with Rob Shaw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="episode-content">
-            <h3 class="episode-title">How vLLM and llm-d Changed AI Inference with Rob Shaw</h3>
-            <div class="episode-tags">
-              <span class="tag">AI Inference</span>
-              <span class="tag">vLLM</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Attention Deficit -->
-    <section class="episodes">
-      <div class="section-header">
-        <h2 class="section-title">Attention Deficit — Weekly AI Show</h2>
-        <a href="https://attentiondeficitpod.substack.com" class="link-with-arrow" target="_blank" rel="noopener">
-          All episodes on Substack
-          <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4-4-4-4"/></svg>
-        </a>
-      </div>
-      <div class="about-content" style="margin-bottom: 24px;">
-        <p class="about-description">
-          A weekly show with <strong>Taylor Dolezal</strong> (Dosu). Two engineers sit down every week to talk about what actually happened in AI. Not the press releases. The articles, the tools, the things that made them stop and think.
-        </p>
-      </div>
-      <div class="episode-grid">
-        <article class="episode-card">
-          <a href="https://attentiondeficitpod.substack.com/p/welcome-to-attention-deficit" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-            <div class="episode-content">
-              <h3 class="episode-title">Welcome to Attention Deficit: Agent Failures, Custom Chips, and the Cost of AI</h3>
-              <p class="about-description" style="font-size: 0.9rem; margin-top: 8px;">
-                Episode 1. Agent failure modes, the OpenAI Jalapeno chip announcement, and why flat-rate AI pricing is over.
-              </p>
-              <div class="episode-tags">
-                <span class="tag">AI Agents</span>
-                <span class="tag">Custom Silicon</span>
-                <span class="tag">Token Economics</span>
-              </div>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- Writing -->
-    <section class="episodes">
-      <div class="section-header">
-        <h2 class="section-title">Writing</h2>
-        <div style="display: flex; gap: 16px;">
-          <a href="https://developers.redhat.com/author/alexa-griffith" class="link-with-arrow" target="_blank" rel="noopener">
-            Red Hat Developer
-            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-          <a href="https://alexasinput.substack.com" class="link-with-arrow" target="_blank" rel="noopener">
-            Substack
-            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 12l4-4-4-4"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <div class="episode-grid">
-        <article class="episode-card">
-          <a href="https://developers.redhat.com/articles/2026/08/05/trace-kubernetes-resources-llm-d-model-serving" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-            <div class="episode-content">
-              <h3 class="episode-title">Trace Kubernetes Resources for llm-d Model Serving</h3>
-              <p class="about-description" style="font-size: 0.9rem; margin-top: 8px;">
-                Part 2 of the "LLM inference on Kubernetes" series. Traces every Kubernetes resource the controller creates — with and without the llm-d router — using kubectl tree on a live LLMInferenceService.
-              </p>
-              <div class="episode-tags">
-                <span class="tag">llm-d</span>
-                <span class="tag">Kubernetes</span>
-                <span class="tag">AI Inference</span>
-              </div>
-              <p style="font-size: 0.8rem; margin-top: 8px; opacity: 0.6;">Red Hat Developer — August 2026</p>
-            </div>
-          </a>
-        </article>
-
-        <article class="episode-card">
-          <a href="https://developers.redhat.com/articles/2026/06/16/red-hat-ai-inference-amazon-eks-kubernetes-resources" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
-            <div class="episode-content">
-              <h3 class="episode-title">Inside Red Hat AI Inference on EKS: Understanding the Kubernetes Resources</h3>
-              <p class="about-description" style="font-size: 0.9rem; margin-top: 8px;">
-                Part 1 of the series. What actually gets created when you deploy a model on Red Hat AI — the full Kubernetes resource picture on Amazon EKS.
-              </p>
-              <div class="episode-tags">
-                <span class="tag">KServe</span>
-                <span class="tag">EKS</span>
-                <span class="tag">AI Inference</span>
-              </div>
-              <p style="font-size: 0.8rem; margin-top: 8px; opacity: 0.6;">Red Hat Developer — June 2026</p>
-            </div>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="about">
-      <div class="about-content">
-        <h2 class="section-title">About</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="about-description">
-              <strong>Alexa's Input (AI)</strong> — Technical conversations with builders and thought leaders exploring distributed systems,
-              infrastructure, AI, SRE, security, and production engineering. Each episode goes beneath the surface to understand the mechanisms.
-            </p>
-            <p class="about-description">
-              <strong>Attention Deficit</strong> — A weekly show with Taylor Dolezal covering the AI news, tools, and ideas that actually matter to working engineers.
-            </p>
-          </div>
-          <div class="about-stats">
-            <div class="stat-card">
-              <div class="stat-number">50+</div>
-              <div class="stat-label">Episodes</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-number">2 Shows</div>
-              <div class="stat-label">Interviews + Weekly AI</div>
-            </div>
+        <div class="archive-header">
+          <h2 id="archive-title">More conversations</h2>
+          <div class="carousel-controls" hidden>
+            <button type="button" data-carousel-prev aria-label="Previous episodes" aria-controls="episode-track">←</button>
+            <button type="button" data-carousel-next aria-label="Next episodes" aria-controls="episode-track">→</button>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="episode-track" id="episode-track" role="region" aria-labelledby="archive-title" tabindex="0">
+          <article class="episode-card" id="episode-6kGM8jl-ekQ">
+          <div class="video-shell" data-video-id="6kGM8jl-ekQ">
+            <img src="https://i.ytimg.com/vi/6kGM8jl-ekQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Personal Security with Alex Zenla, Founder and CTO of Edera" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 50:56">50:56</span>
+          </div>
+          <div class="episode-content">
+            <h3>Personal Security with Alex Zenla, Founder and CTO of Edera</h3>
 
-    <!-- Subscribe Section -->
-    <section class="subscribe">
-      <div class="subscribe-content">
-        <h2 class="subscribe-title">Subscribe & Connect</h2>
-        <p class="subscribe-description">
-          New episodes covering systems, infrastructure, AI, distributed computing, and production engineering.
-        </p>
-        <div class="platform-links">
-          <a href="https://www.instagram.com/alexasinput/" class="platform-link" target="_blank" rel="noopener"><span>Instagram · @alexasinput</span></a>
-          <a href="https://www.tiktok.com/@alexasinput" class="platform-link" target="_blank" rel="noopener"><span>TikTok · @alexasinput</span></a>
-          <a href="https://youtube.com/@alexasinput" class="platform-link" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            <span>YouTube</span>
-          </a>
-          <a href="https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H" class="platform-link" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-            <span>Spotify</span>
-          </a>
-          <a href="https://alexasinput.substack.com" class="platform-link" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-            <span>Substack</span>
-          </a>
-          <a href="https://x.com/alexa_griffith_" class="platform-link" target="_blank" rel="noopener">
-            <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            <span>X</span>
-          </a>
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=6kGM8jl-ekQ">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-HIGZb7KWMFM">
+          <div class="video-shell" data-video-id="HIGZb7KWMFM">
+            <img src="https://i.ytimg.com/vi/HIGZb7KWMFM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Paying Attention in the Age of Agents" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 1:04:19">1:04:19</span>
+          </div>
+          <div class="episode-content">
+            <h3>Paying Attention in the Age of Agents</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=HIGZb7KWMFM">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-xxpsPIuwkjM">
+          <div class="video-shell" data-video-id="xxpsPIuwkjM">
+            <img src="https://i.ytimg.com/vi/xxpsPIuwkjM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 44:07">44:07</span>
+          </div>
+          <div class="episode-content">
+            <h3>Bonus Discussion: Paying Attention in the Age of Agents with Taylor Dolezal</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=xxpsPIuwkjM">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-vTBjUEWQ4BM">
+          <div class="video-shell" data-video-id="vTBjUEWQ4BM">
+            <img src="https://i.ytimg.com/vi/vTBjUEWQ4BM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Systems, Scale, and SRE with Vlad Leyberov" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 57:41">57:41</span>
+          </div>
+          <div class="episode-content">
+            <h3>Systems, Scale, and SRE with Vlad Leyberov</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=vTBjUEWQ4BM">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-eI_kSVFU8Z0">
+          <div class="video-shell" data-video-id="eI_kSVFU8Z0">
+            <img src="https://i.ytimg.com/vi/eI_kSVFU8Z0/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play David Aronchick on Distributed Data Orchestration with Expanso" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 1:17:33">1:17:33</span>
+          </div>
+          <div class="episode-content">
+            <h3>David Aronchick on Distributed Data Orchestration with Expanso</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=eI_kSVFU8Z0">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-p6R_EeLheA4">
+          <div class="video-shell" data-video-id="p6R_EeLheA4">
+            <img src="https://i.ytimg.com/vi/p6R_EeLheA4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play How vLLM and llm-d Changed AI Inference with Rob Shaw" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 1:41:55">1:41:55</span>
+          </div>
+          <div class="episode-content">
+            <h3>How vLLM and llm-d Changed AI Inference with Rob Shaw</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=p6R_EeLheA4">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-u5EmH2Cy40k">
+          <div class="video-shell" data-video-id="u5EmH2Cy40k">
+            <img src="https://i.ytimg.com/vi/u5EmH2Cy40k/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Intelligence Per Watt with Emilio Andere" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 1:13:31">1:13:31</span>
+          </div>
+          <div class="episode-content">
+            <h3>Intelligence Per Watt with Emilio Andere</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=u5EmH2Cy40k">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-KPz72eeAqqA">
+          <div class="video-shell" data-video-id="KPz72eeAqqA">
+            <img src="https://i.ytimg.com/vi/KPz72eeAqqA/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Building Reliable Systems at Bloomberg with Sal Furino" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 54:04">54:04</span>
+          </div>
+          <div class="episode-content">
+            <h3>Building Reliable Systems at Bloomberg with Sal Furino</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=KPz72eeAqqA">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-SdB7wU9N5c8">
+          <div class="video-shell" data-video-id="SdB7wU9N5c8">
+            <img src="https://i.ytimg.com/vi/SdB7wU9N5c8/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Laila: Reinventing Dating as a Social Marketplace with Kaan Divitoğlu" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 54:29">54:29</span>
+          </div>
+          <div class="episode-content">
+            <h3>Laila: Reinventing Dating as a Social Marketplace with Kaan Divitoğlu</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=SdB7wU9N5c8">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-xWrp3HNNvdY">
+          <div class="video-shell" data-video-id="xWrp3HNNvdY">
+            <img src="https://i.ytimg.com/vi/xWrp3HNNvdY/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Architecting Agentic AI with Swagat Kulkarni" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 57:23">57:23</span>
+          </div>
+          <div class="episode-content">
+            <h3>Architecting Agentic AI with Swagat Kulkarni</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=xWrp3HNNvdY">Watch on YouTube</a></div>
+          </div>
+        </article>
+<article class="episode-card" id="episode-wrvbSLMYUBc">
+          <div class="video-shell" data-video-id="wrvbSLMYUBc">
+            <img src="https://i.ytimg.com/vi/wrvbSLMYUBc/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" >
+            <button class="video-play" type="button" aria-label="Play Beyond the Clouds with Kelsey Hightower" hidden><span aria-hidden="true">▶</span></button>
+            <span class="duration" aria-label="Duration 1:06:17">1:06:17</span>
+          </div>
+          <div class="episode-content">
+            <h3>Beyond the Clouds with Kelsey Hightower</h3>
+
+            <div class="episode-links"><a href="https://www.youtube.com/watch?v=wrvbSLMYUBc">Watch on YouTube</a></div>
+          </div>
+        </article>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
+      </section>
+      <section class="section" id="attention-deficit" aria-labelledby="attention-title">
+        <div class="section-header">
+          <h2 id="attention-title">Attention Deficit</h2>
+          <a class="section-link" href="https://attentiondeficitpod.substack.com/">All weekly episodes <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="section-intro">Attention Deficit is a weekly AI news show from two engineers who build with this stuff all day. Taylor Dolezal (Dosu) and Alexa Griffith (Red Hat) cover agents, infrastructure, and the messy reality between demo and production.</p>
+        <div class="text-grid"><article class="text-card"><time datetime="2026-09-07">2026-09-07</time><h3><a href="https://attentiondeficitpod.substack.com/p/attention-deficit-ep-7-who-let-the">Attention Deficit Ep. 7 – Be Like a Data Center</a></h3><p>Rogue agents, virtual cells, AI search, and what students say about the AI bubble.</p></article>
+<article class="text-card"><time datetime="2026-08-30">2026-08-30</time><h3><a href="https://attentiondeficitpod.substack.com/p/attention-deficit-ep-6-sixteen-adversarial">Attention Deficit Ep. 6 – Sixteen Adversarial Reviewers</a></h3><p>A $3,000 token day, Claude gets $534 to trade, Anthropic marks its text, and a Bash harness that knows when it’s time to go to sleep.</p></article>
+<article class="text-card"><time datetime="2026-08-16">2026-08-16</time><h3><a href="https://attentiondeficitpod.substack.com/p/attention-deficit-ep-5-its-not-a">Attention Deficit Ep. 5 – It&#x27;s Not a Shark, It&#x27;s a Data Center</a></h3><p>Flying cars on our feeds, data centers under the sea, DeepSeek ships a harness, and Decant makes its public debut.</p></article></div>
+      </section>
+      <section class="section" id="writing" aria-labelledby="writing-title">
+        <div class="section-header">
+          <h2 id="writing-title">Writing</h2>
+          <a class="section-link" href="https://developers.redhat.com/author/alexa-griffith">More on Red Hat Developer <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="writing-list"><article class="writing-item"><time datetime="2026-08-27">2026-08-27</time><h3><a href="https://developers.redhat.com/articles/2026/08/27/llm-d-flow-control-priority-queuing-for-shared-gpu-inference">llm-d flow control: Priority queuing for shared GPU inference</a></h3><span class="publication">Red Hat Developer</span></article>
+<article class="writing-item"><time datetime="2026-08-13">2026-08-13</time><h3><a href="https://developers.redhat.com/articles/2026/08/13/how-llm-d-routes-model-inference-traffic-amazon-eks">How llm-d routes model inference traffic on Amazon EKS</a></h3><span class="publication">Red Hat Developer</span></article>
+<article class="writing-item"><time datetime="2026-08-05">2026-08-05</time><h3><a href="https://developers.redhat.com/articles/2026/08/05/trace-kubernetes-resources-llm-d-model-serving">Trace Kubernetes resources for llm-d model serving</a></h3><span class="publication">Red Hat Developer</span></article>
+<article class="writing-item"><time datetime="2026-06-16">2026-06-16</time><h3><a href="https://developers.redhat.com/articles/2026/06/16/red-hat-ai-inference-amazon-eks-kubernetes-resources">Red Hat AI Inference on Amazon EKS: Exploring the Kubernetes resources</a></h3><span class="publication">Red Hat Developer</span></article></div>
+      </section>
+      <section class="section" id="follow" aria-labelledby="follow-title">
+        <div class="section-header"><h2 id="follow-title">Listen &amp; follow</h2></div>
+        <div class="platform-links"><a class="platform-link" href="https://www.youtube.com/@alexasinput"><span>YouTube<span aria-hidden="true">↗</span></span><small>Full video episodes</small></a>
+<a class="platform-link" href="https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H"><span>Spotify<span aria-hidden="true">↗</span></span><small>Listen to the podcast</small></a>
+<a class="platform-link" href="https://alexasinput.substack.com/"><span>Substack<span aria-hidden="true">↗</span></span><small>Episode takeaways</small></a>
+<a class="platform-link" href="https://www.instagram.com/alexasinput/"><span>Instagram<span aria-hidden="true">↗</span></span><small>@alexasinput</small></a>
+<a class="platform-link" href="https://www.tiktok.com/@alexasinput"><span>TikTok<span aria-hidden="true">↗</span></span><small>@alexasinput</small></a>
+<a class="platform-link" href="https://x.com/alexa_griffith_"><span>X<span aria-hidden="true">↗</span></span><small>@alexa_griffith_</small></a></div>
+      </section>
+    </main>
     <footer class="footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          Alexa's Input (AI) — © 2026 Alexa Griffith
-        </p>
-        <p class="footer-tagline">
-          Going beneath the surface to understand the mechanisms
-        </p>
-      </div>
+      <p>© 2026 <a href="https://alexagriffith.com/">Alexa Griffith</a></p>
+      <p>Opinions are my own.</p>
     </footer>
   </div>
 </body>

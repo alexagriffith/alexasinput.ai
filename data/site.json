@@ -1,0 +1,92 @@
+{
+  "name": "Alexa’s Input (AI)",
+  "url": "https://alexasinputai.com/",
+  "bio": "Alexa’s Input is a podcast about how technology actually moves forward. Hosted by Alexa Griffith, it features conversations with engineers, founders, CEOs, and leaders shaping today’s tech landscape. Each episode digs into the decisions behind the systems — what’s being built, what’s being questioned, and why it matters now.",
+  "verified": "2026-09-14",
+  "sources": {
+    "bio": [
+      "https://www.youtube.com/@alexasinput",
+      "https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H"
+    ],
+    "episodes": "https://www.youtube.com/@alexasinput/videos",
+    "attention": "https://attentiondeficitpod.substack.com/feed",
+    "writing": "https://developers.redhat.com/author/alexa-griffith"
+  },
+  "attention": {
+    "bio": "Attention Deficit is a weekly AI news show from two engineers who build with this stuff all day. Taylor Dolezal (Dosu) and Alexa Griffith (Red Hat) cover agents, infrastructure, and the messy reality between demo and production.",
+    "episodes": [
+      {
+        "title": "Attention Deficit Ep. 7 – Be Like a Data Center",
+        "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-7-who-let-the",
+        "description": "Rogue agents, virtual cells, AI search, and what students say about the AI bubble.",
+        "date": "2026-09-07"
+      },
+      {
+        "title": "Attention Deficit Ep. 6 – Sixteen Adversarial Reviewers",
+        "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-6-sixteen-adversarial",
+        "description": "A $3,000 token day, Claude gets $534 to trade, Anthropic marks its text, and a Bash harness that knows when it’s time to go to sleep.",
+        "date": "2026-08-30"
+      },
+      {
+        "title": "Attention Deficit Ep. 5 – It's Not a Shark, It's a Data Center",
+        "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-5-its-not-a",
+        "description": "Flying cars on our feeds, data centers under the sea, DeepSeek ships a harness, and Decant makes its public debut.",
+        "date": "2026-08-16"
+      }
+    ]
+  },
+  "writing": [
+    {
+      "url": "https://developers.redhat.com/articles/2026/08/27/llm-d-flow-control-priority-queuing-for-shared-gpu-inference",
+      "title": "llm-d flow control: Priority queuing for shared GPU inference",
+      "date": "2026-08-27"
+    },
+    {
+      "url": "https://developers.redhat.com/articles/2026/08/13/how-llm-d-routes-model-inference-traffic-amazon-eks",
+      "title": "How llm-d routes model inference traffic on Amazon EKS",
+      "date": "2026-08-13"
+    },
+    {
+      "url": "https://developers.redhat.com/articles/2026/08/05/trace-kubernetes-resources-llm-d-model-serving",
+      "title": "Trace Kubernetes resources for llm-d model serving",
+      "date": "2026-08-05"
+    },
+    {
+      "url": "https://developers.redhat.com/articles/2026/06/16/red-hat-ai-inference-amazon-eks-kubernetes-resources",
+      "title": "Red Hat AI Inference on Amazon EKS: Exploring the Kubernetes resources",
+      "date": "2026-06-16"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@alexasinput",
+      "label": "Full video episodes"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H",
+      "label": "Listen to the podcast"
+    },
+    {
+      "name": "Substack",
+      "url": "https://alexasinput.substack.com/",
+      "label": "Episode takeaways"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/alexasinput/",
+      "label": "@alexasinput"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/@alexasinput",
+      "label": "@alexasinput"
+    },
+    {
+      "name": "X",
+      "url": "https://x.com/alexa_griffith_",
+      "label": "@alexa_griffith_"
+    }
+  ]
+}
