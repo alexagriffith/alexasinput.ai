@@ -2,6 +2,7 @@
 """Render the static homepage from reviewed, source-attributed content."""
 import argparse
 import html
+import hashlib
 import json
 from pathlib import Path
 from string import Template
@@ -64,6 +65,8 @@ def build():
     description = SITE['bio'].split('. ')[0] + '.'
     rendered = Template((ROOT / 'templates/index.html').read_text()).substitute(
         name=esc(SITE['name']), description=esc(description), bio=esc(SITE['bio']),
+        style_version=hashlib.sha256((ROOT / 'styles.css').read_bytes()).hexdigest()[:12],
+        script_version=hashlib.sha256((ROOT / 'site.js').read_bytes()).hexdigest()[:12],
         schema=json.dumps(schema, ensure_ascii=False, indent=2).replace('<', '\\u003c'),
         featured=episode_card(EPISODES[0], True), archive='\n'.join(episode_card(ep) for ep in EPISODES[1:]),
         attention_bio=esc(SITE['attention']['bio']), attention=attention, writing=writing, platforms=platforms)
