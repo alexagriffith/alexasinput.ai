@@ -16,6 +16,12 @@
     "bio": "Attention Deficit is a weekly AI news show from two engineers who build with this stuff all day. Taylor Dolezal (Dosu) and Alexa Griffith (Red Hat) cover agents, infrastructure, and the messy reality between demo and production.",
     "episodes": [
       {
+        "title": "Attention Deficit Ep. 8 – GPT-6 Luna vs Sol. Can a harness close the gap?",
+        "url": "https://www.attentiondeficit.ai/episodes/ep008-gpt-6-luna-vs-sol-can-a-harness-close-the-gap",
+        "description": "Alexa Griffith and Taylor Dolezal discuss agent harness costs, Google’s Agent Substrate, and voice AI.",
+        "date": "2026-10-21"
+      },
+      {
         "title": "Attention Deficit Ep. 7 – Be Like a Data Center",
         "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-7-who-let-the",
         "description": "Rogue agents, virtual cells, AI search, and what students say about the AI bubble.",
@@ -26,12 +32,6 @@
         "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-6-sixteen-adversarial",
         "description": "A $3,000 token day, Claude gets $534 to trade, Anthropic marks its text, and a Bash harness that knows when it’s time to go to sleep.",
         "date": "2026-08-30"
-      },
-      {
-        "title": "Attention Deficit Ep. 5 – It's Not a Shark, It's a Data Center",
-        "url": "https://attentiondeficitpod.substack.com/p/attention-deficit-ep-5-its-not-a",
-        "description": "Flying cars on our feeds, data centers under the sea, DeepSeek ships a harness, and Decant makes its public debut.",
-        "date": "2026-08-16"
       }
     ]
   },
@@ -87,6 +87,19 @@
       "name": "X",
       "url": "https://x.com/alexa_griffith_",
       "label": "@alexa_griffith_"
+    },
+    {
+      "name": "Apple Podcasts",
+      "url": "https://podcasts.apple.com/us/podcast/alexas-input-ai/id1548244933",
+      "label": "Listen in Apple Podcasts"
+    },
+    {
+      "name": "RSS",
+      "url": "https://anchor.fm/s/4013852c/podcast/rss",
+      "label": "Subscribe in your podcast app"
     }
-  ]
+  ],
+  "description": "Alexa Griffith interviews engineers and founders about AI infrastructure, open source, and the decisions behind the technology we use.",
+  "host_bio": "Alexa Griffith is a Senior Principal Software Engineer and Forward Deployed Engineer at Red Hat working on AI inference infrastructure. She hosts Alexa’s Input (AI) and co-hosts Attention Deficit with Taylor Dolezal.",
+  "hub": "https://alexagriffith.com/links/"
 }

@@ -7,6 +7,7 @@
   <title>$name — Podcast with Alexa Griffith</title>
   <meta name="description" content="$description">
   <link rel="canonical" href="https://alexasinputai.com/">
+  <link rel="alternate" type="application/rss+xml" title="Alexa’s Input (AI) podcast RSS" href="$rss_url">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alexasinputai.com/">
   <meta property="og:title" content="$name — Podcast with Alexa Griffith">
@@ -45,12 +46,14 @@ $schema
       <section class="intro" aria-labelledby="podcast-title">
         <h1 id="podcast-title">$name</h1>
         <p class="podcast-bio">$bio</p>
+        <p class="host-bio">$host_bio <a href="https://alexagriffith.com/links/">All links</a>.</p>
       </section>
       <section class="section" id="episodes" aria-labelledby="episodes-title">
         <div class="section-header">
           <h2 id="episodes-title">Latest episode</h2>
           <a class="section-link" href="https://www.youtube.com/@alexasinput/videos">All episodes on YouTube <span aria-hidden="true">↗</span></a>
         </div>
+        $latest_published
         $featured
         <div class="archive-header">
           <h2 id="archive-title">More conversations</h2>

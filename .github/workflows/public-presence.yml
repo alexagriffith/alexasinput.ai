@@ -1,0 +1,46 @@
+name: Public website checks
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "55 13 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: public-presence-checks
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate maintenance script and checked-in metadata
+        run: |
+          python3 -m py_compile scripts/maintain-presence.py
+          python3 scripts/maintain-presence.py --site podcast
+          python3 scripts/build-site.py --check
+          python3 scripts/check-site.py
+          node --check site.js
+      - name: Prepare updates from public published sources
+        run: python3 scripts/maintain-presence.py --site podcast --refresh
+      - name: Build and validate proposed podcast changes
+        run: |
+          python3 scripts/build-site.py
+          python3 scripts/build-site.py --check
+          python3 scripts/check-site.py
+      - name: Save a proposed update for review
+        if: always()
+        run: |
+          mkdir -p reports
+          git diff -- index.html data sitemap.xml > reports/proposed-update.patch
+          python3 -c 'import pathlib; p=pathlib.Path("reports/proposed-update.patch"); print("Proposed changes:", p.stat().st_size, "bytes")'
+      - name: Check public destinations
+        if: always()
+        run: python3 scripts/maintain-presence.py --site podcast --audit-links
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-website-review
+          path: reports/

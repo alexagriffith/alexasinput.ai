@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "person": {
+    "id": "https://alexagriffith.com/#person",
+    "name": "Alexa Griffith",
+    "jobTitle": "Senior Principal Software Engineer and Forward Deployed Engineer",
+    "employer": "Red Hat",
+    "bio": "Alexa Griffith is a Senior Principal Software Engineer and Forward Deployed Engineer at Red Hat working on AI inference infrastructure. She hosts Alexa’s Input (AI) and co-hosts Attention Deficit with Taylor Dolezal."
+  },
+  "podcasts": {
+    "alexas_input": {
+      "name": "Alexa’s Input (AI)",
+      "host": "Alexa Griffith",
+      "description": "Alexa’s Input is a podcast about how technology actually moves forward. Hosted by Alexa Griffith, it features conversations with engineers, founders, CEOs, and leaders shaping today’s tech landscape. Each episode digs into the decisions behind the systems — what’s being built, what’s being questioned, and why it matters now.",
+      "short_description": "Alexa Griffith interviews engineers and founders about AI infrastructure, open source, and the decisions behind the technology we use."
+    },
+    "attention": {
+      "name": "Attention Deficit",
+      "hosts": [
+        "Alexa Griffith",
+        "Taylor Dolezal"
+      ],
+      "description": "Attention Deficit is an AI podcast hosted by Alexa Griffith and Taylor Dolezal, covering agents, infrastructure, and what happens between the demo and production."
+    }
+  },
+  "links": {
+    "home": "https://alexagriffith.com/",
+    "hub": "https://alexagriffith.com/links/",
+    "kubecon": "https://alexagriffith.com/kubecon/",
+    "alexas_input": "https://alexasinputai.com/",
+    "alexas_apple": "https://podcasts.apple.com/us/podcast/alexas-input-ai/id1548244933",
+    "alexas_spotify": "https://open.spotify.com/show/1tnV8Qk6SEw1Dr9Tqikr0H",
+    "alexas_rss": "https://anchor.fm/s/4013852c/podcast/rss",
+    "alexas_youtube": "https://www.youtube.com/@alexasinput",
+    "alexas_substack": "https://alexasinput.substack.com/",
+    "alexas_instagram": "https://www.instagram.com/alexasinput/",
+    "alexas_tiktok": "https://www.tiktok.com/@alexasinput",
+    "attention": "https://www.attentiondeficit.ai/",
+    "attention_apple": "https://podcasts.apple.com/us/podcast/attention-deficit-podcast/id6795675427",
+    "attention_rss": "https://attentiondeficitpod.substack.com/feed",
+    "attention_youtube": "https://www.youtube.com/@AttentionDeficitAI",
+    "attention_substack": "https://attentiondeficitpod.substack.com/",
+    "linkedin": "https://www.linkedin.com/in/alexa-griffith/",
+    "x": "https://x.com/alexa_griffith_",
+    "github": "https://github.com/alexagriffith",
+    "writing": "https://developers.redhat.com/author/alexa-griffith",
+    "medium": "https://medium.com/@alexagriffith",
+    "blog": "https://blog.alexagriffith.com/",
+    "linktree": "https://linktr.ee/alexagriffith"
+  },
+  "roles": [
+    {
+      "role": "Tech Lead, TAG Infrastructure",
+      "organization": "Cloud Native Computing Foundation",
+      "url": "https://contribute.cncf.io/community/tags/infrastructure/"
+    },
+    {
+      "role": "Subject Matter Expert, Kubernetes AI Associate (KAIA) certification development",
+      "organization": "CNCF / Linux Foundation Education",
+      "url": "https://www.cncf.io/announcements/2026/11/10/cncf-launches-certified-kubernetes-network-engineer-certification-ckne-to-advance-production-ready-networking-skills-for-ai-era/"
+    }
+  ]
+}

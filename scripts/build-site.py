@@ -52,7 +52,7 @@ def build():
     schema = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'WebSite', '@id': base + '#website', 'url': base, 'name': SITE['name'], 'inLanguage': 'en'},
         {'@type': 'Person', '@id': 'https://alexagriffith.com/#person', 'name': 'Alexa Griffith', 'url': 'https://alexagriffith.com/'},
-        {'@type': 'PodcastSeries', '@id': series_id, 'url': base, 'name': SITE['name'], 'description': SITE['bio'], 'author': {'@id': 'https://alexagriffith.com/#person'}, 'inLanguage': 'en', 'image': base + 'assets/alexas-input-logo.png', 'sameAs': [p['url'] for p in SITE['platforms'][:5]]},
+        {'@type': 'PodcastSeries', '@id': series_id, 'url': base, 'name': SITE['name'], 'description': SITE['bio'], 'author': {'@id': 'https://alexagriffith.com/#person'}, 'inLanguage': 'en', 'image': base + 'assets/alexas-input-logo.png', 'webFeed': next(p['url'] for p in SITE['platforms'] if p['name'] == 'RSS'), 'sameAs': [p['url'] for p in SITE['platforms'] if p['name'] not in ('RSS', 'X')]},
         {'@type': 'CollectionPage', '@id': base + '#webpage', 'url': base, 'name': SITE['name'], 'isPartOf': {'@id': base + '#website'}, 'about': {'@id': series_id}, 'mainEntity': {'@id': base + '#episode-list'}},
         {'@type': 'ItemList', '@id': base + '#episode-list', 'name': 'Recent podcast episodes', 'itemListElement': [
             {'@type': 'ListItem', 'position': i + 1, 'item': {'@type': 'PodcastEpisode', '@id': base + '#episode-' + ep['id'], 'url': ep['url'], 'name': ep['title'], 'image': f'https://i.ytimg.com/vi/{ep["id"]}/hqdefault.jpg', 'timeRequired': duration_iso(ep['duration']), 'partOfSeries': {'@id': series_id}, **({'description': ep['description']} if ep.get('description') else {})}}
@@ -61,10 +61,13 @@ def build():
     attention = '\n'.join(f'''<article class="text-card"><time datetime="{esc(ep['date'])}">{esc(ep['date'])}</time><h3><a href="{safe_url(ep['url'])}">{esc(ep['title'])}</a></h3><p>{esc(ep['description'])}</p></article>''' for ep in SITE['attention']['episodes'])
     writing = '\n'.join(f'''<article class="writing-item"><time datetime="{esc(a['date'])}">{esc(a['date'])}</time><h3><a href="{safe_url(a['url'])}">{esc(a['title'])}</a></h3><span class="publication">Red Hat Developer</span></article>''' for a in SITE['writing'])
     platforms = '\n'.join(f'''<a class="platform-link" href="{safe_url(p['url'])}"><span>{esc(p['name'])}<span aria-hidden="true">↗</span></span><small>{esc(p['label'])}</small></a>''' for p in SITE['platforms'])
-    # Use the existing opening sentence verbatim for concise search/social snippets.
-    description = SITE['bio'].split('. ')[0] + '.'
+    # Keep the approved search snippet separate from the established long show bio.
+    description = SITE.get('description') or SITE['bio'].split('. ')[0] + '.'
+    latest = SITE.get('latest_published')
+    latest_published = (f'<p class="section-intro">Latest audio release: <a href="{safe_url(latest["url"])}">{esc(latest["title"])}</a> <time datetime="{esc(latest["date"])}">{esc(latest["date"])}</time>.</p>' if latest else '')
     rendered = Template((ROOT / 'templates/index.html').read_text()).substitute(
         name=esc(SITE['name']), description=esc(description), bio=esc(SITE['bio']),
+        host_bio=esc(SITE['host_bio']), rss_url=safe_url(next(p['url'] for p in SITE['platforms'] if p['name'] == 'RSS')), latest_published=latest_published,
         style_version=hashlib.sha256((ROOT / 'styles.css').read_bytes()).hexdigest()[:12],
         script_version=hashlib.sha256((ROOT / 'site.js').read_bytes()).hexdigest()[:12],
         schema=json.dumps(schema, ensure_ascii=False, indent=2).replace('<', '\\u003c'),
